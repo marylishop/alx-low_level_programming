@@ -1,9 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#inctude <stdio.h>
+#include <stdio.h>
 
-int -putchar(char c) ;
+int _putchar(char c);
+
 
 
 #endif
