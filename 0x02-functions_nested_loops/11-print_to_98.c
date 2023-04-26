@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * print_to_98 - prints all natural numbers from n to 98,
+ * print_times_table - prints all natural numbers from n to 98,
  * followed by a new line
- * @n: print from this number
+ * @n: takes number input 
  */
-void print_to_98(int n)
+void print_times_table(int n)
 {
 	int i, j;
 
