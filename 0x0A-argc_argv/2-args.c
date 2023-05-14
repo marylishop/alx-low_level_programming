@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * main - prints all arguments it receives
  * @argc: number of arguments
@@ -7,13 +7,13 @@
  *
  * Return: Always 0 (Success)
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int number = 0;
 
 	while (number < argc)
 	{
-		printf("%s\n", (argv + number);
+		printf("%s\n", *(argv + number));
 				number++;
 				(*argv)++;
 	}
