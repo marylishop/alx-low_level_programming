@@ -9,7 +9,7 @@
  * Return: A pointer to the newly created array.
  * if min > max , return NULL.
  *
- * if memory allocation fails, return NULL.
+ * if memory malloc fails, return NULL.
  */
 int *array_range(int min, int max)
 {
