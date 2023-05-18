@@ -7,7 +7,7 @@
  * @max: the maximum value of the range.
  *
  * Return: A pointer to the newly created array.
- * if min is greater than max , return NULL.
+ * if min > max , return NULL.
  *
  * if memory allocation fails, return NULL.
  */
