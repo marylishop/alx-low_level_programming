@@ -3,12 +3,12 @@
 
 /**
  * array_range - creates an array of integers.
- * @min: the minimum.
- * @max: the maximum.
+ * @min: the minimum value.
+ * @max: the maximum value.
  *
  * Return: pointer to the newly created array.
  * if man > mix , return NULL.
- * if memory malloc fails, return NULL.
+ * if malloc fails, return NULL.
  */
 int *array_range(int min, int max)
 {
@@ -16,16 +16,16 @@ int *array_range(int min, int max)
 	int i;
 
 	if (min > max)
-	{
+
 		return (NULL);
-	}
+
 	ar = malloc(sizeof(*ar) * ((max - min) + 1));
 
 	if (ar == NULL)
 		return (NULL);
 
-	for (int i = 0; i <= max; i++, min++)
-		ar[i] = min + i;
+	for (i = 0; min <= max; i++, min++)
+		ar[i] = min;
 
 	return (ar);
 }
