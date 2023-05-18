@@ -40,7 +40,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		if (i < ls1)
 			sout[i] = s1[i];
 		else
-			sout[i] = s2[i];
+			sout[i] = s2[i - ls1];
+
 	sout[i] = '\0';
 
 	return (sout);
