@@ -1,11 +1,11 @@
 # include "3-calc.h"
-/*
-* main - check the code for school ALX students.
-* @argca: argument count.
-* @argv: argument vector.
-*
-* Return: always 0.
-*/
+/**
+ * main - check the code for ALX students.
+ * @argc: argument count.
+ * @argv: argument vector.
+ *
+ * Return: Always 0.
+ */
 int main(int argc, char *argv[])
 {
 int a, b;
