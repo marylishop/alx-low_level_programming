@@ -8,7 +8,7 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *pr2;
+	listint_t *p2;
 	listint_t *prev;
 
 	p2 = head;
@@ -16,25 +16,25 @@ listint_t *find_listint_loop(listint_t *head)
 	while (head && pr2 && pr2->next)
 	{
 		head = head->next;
-		pr2 = pr2->next->next;
+		p2 = p2->next->next;
 
 		if (head == pr2)
 		{
 			head = prev;
-			prev =  pr2;
+			prev =  p2;
 			while (1)
 			{
-				pr2 = prev;
-				while (pr2->next != head && pr2->next != prev)
+				p2 = prev;
+				while (p2->next != head && p2->next != prev)
 				{
-					pr2 = pr2->next;
+					p2 = p2->next;
 				}
-				if (pr2->next == head)
+				if (p2->next == head)
 					break;
 
 				head = head->next;
 			}
-			return (pr2->next);
+			return (p2->next);
 		}
 	}
 
