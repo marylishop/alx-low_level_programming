@@ -13,12 +13,12 @@ listint_t *find_listint_loop(listint_t *head)
 
 	p2 = head;
 	prev = head;
-	while (head && pr2 && pr2->next)
+	while (head && p2 && p2->next)
 	{
 		head = head->next;
 		p2 = p2->next->next;
 
-		if (head == pr2)
+		if (head == p2)
 		{
 			head = prev;
 			prev =  p2;
