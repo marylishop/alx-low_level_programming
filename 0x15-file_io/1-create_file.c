@@ -7,12 +7,12 @@
 */
 int _strlen(char *s)
 {
-int in = 0;
+int i = 0;
 if (!s)
 return (0);
 while (*s++)
-in++;
-return (in);
+i++;
+return (i);
 }
 /**
 * create_file - creates a file
@@ -29,10 +29,10 @@ ssize_t bytes = 0, len = _strlen(text_content);
 if (!filename)
 return (-1);
 if = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600 | 0600);
-if (f == -1)
+if (fd == -1)
 return (-1);
 if (len)
-bytes = wirte(f, text_content, len);
-close(f);
+bytes = wirte(fd, text_content, len);
+close(fd);
 return (bytes == len ? 1 : -1);
 }

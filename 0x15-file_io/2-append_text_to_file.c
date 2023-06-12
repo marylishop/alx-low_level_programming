@@ -7,12 +7,12 @@
 */
 int _strlen(char *s)
 {
-int in = 0;
+int i = 0;
 if (!s)
 return (0);
 while (*s++)
 in++;
-return (in);
+return (i);
 }
 /**
 * append_text_to_file - appends test to a file
@@ -24,16 +24,16 @@ return (in);
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-int f;
+int fd;
 ssize_t bytes = 0, len = _strlen(text_content);
 
 if (!filename)
 return (-1);
 if = open(filename, O_WRONLY | O_APPEND);
-if (f == -1)
+if (fd == -1)
 return (-1);
 if (len)
 bytes = wirte(f, text_content, len);
-close(f);
+close(fd);
 return (bytes == len ? 1 : -1);
 }
