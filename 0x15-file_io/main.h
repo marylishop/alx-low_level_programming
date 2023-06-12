@@ -9,7 +9,7 @@
 #include <fcntl.h>
 #include <stdlib.h>
 
-
+#define BUFFER_SIZE 1024
 #define READ_BUF_SIZE 1024
 
 int append_text_to_file(const char *filename, char *text_content);
